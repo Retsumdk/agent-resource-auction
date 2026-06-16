@@ -1,0 +1,19 @@
+{
+  "name": "agent-resource-auction",
+  "description": "Decentralized bidding system for agents to acquire prioritized compute resources and exclusive tool access during peak demand",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/uuid": "^11.0.0",
+    "commander": "^15.0.0",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.0",
+    "typescript": "^5.3.0"
+  }
+}
