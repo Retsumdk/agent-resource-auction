@@ -77,7 +77,7 @@ const INITIAL_RESOURCES: Resource[] = [
 
 // --- Core Engine ---
 
-class AuctionEngine {
+export class AuctionEngine {
   private state: SystemState;
 
   constructor() {
@@ -278,7 +278,7 @@ class AuctionEngine {
 
 // --- CLI Interface ---
 
-const engine = new AuctionEngine();
+export const engine = new AuctionEngine();
 const program = new Command();
 
 program
@@ -433,4 +433,6 @@ program.command("demo")
     console.log("\nDemo complete. Use 'list-auctions' to see state.");
   });
 
-program.parse();
+if (import.meta.main) {
+  program.parse();
+}
